@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ProTeGe" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ProTeGe" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-Wfatal-errors" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ProTeGe" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-std=c++11" />
+					<Add option="-Wfatal-errors" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="`wx-config --cflags`" />
+		</Compiler>
+		<Linker>
+			<Add option="`wx-config --libs`" />
+		</Linker>
+		<Unit filename="ProTeGe.h" />
+		<Unit filename="ProTeGeApp.cpp" />
+		<Unit filename="ProTeGeApp.h" />
+		<Unit filename="ProTeGeMain.cpp" />
+		<Unit filename="ProTeGeMain.h" />
+		<Unit filename="algos/algos.cpp" />
+		<Unit filename="algos/algos.h" />
+		<Unit filename="images/ImageLib.cpp" />
+		<Unit filename="images/ImageLib.h" />
+		<Unit filename="images/filters.cpp" />
+		<Unit filename="images/filters.h" />
+		<Unit filename="noises/Base_figures.cpp" />
+		<Unit filename="noises/Base_figures.h" />
+		<Unit filename="noises/Cellular_noise.cpp" />
+		<Unit filename="noises/Cellular_noise.h" />
+		<Unit filename="noises/Patterns.cpp" />
+		<Unit filename="noises/Patterns.h" />
+		<Unit filename="noises/Perlin_noise.cpp" />
+		<Unit filename="noises/Perlin_noise.h" />
+		<Unit filename="noises/Sparse_convolution.cpp" />
+		<Unit filename="noises/Sparse_convolution.h" />
+		<Unit filename="noises/Wavelet_noise.cpp" />
+		<Unit filename="noises/Wavelet_noise.h" />
+		<Unit filename="noises/White_noise.cpp" />
+		<Unit filename="noises/White_noise.h" />
+		<Unit filename="threading/threading.cpp" />
+		<Unit filename="threading/threading.h" />
+		<Unit filename="wxsmith/ProTeGeframe.wxs" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="ProTeGeApp.cpp" main="ProTeGeFrame" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxFrame wxs="wxsmith/ProTeGeframe.wxs" src="ProTeGeMain.cpp" hdr="ProTeGeMain.h" fwddecl="0" i18n="1" name="ProTeGeFrame" language="CPP" />
+				</resources>
+			</wxsmith>
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
